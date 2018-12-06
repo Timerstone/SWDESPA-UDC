@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="335.0" prefWidth="275.0" style="-fx-background-color: #7f8c8d; -fx-border-color: #000000; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clienttools.TakeSlot">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="244.0" style="-fx-background-color: #dcdcdc;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="47.0" layoutY="5.0" prefWidth="214.0" text="Take Appointment Slot" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="18.0" layoutY="182.0" text="Time Start:" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepicker" layoutX="43.0" layoutY="148.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="18.0" layoutY="102.0" prefHeight="27.0" prefWidth="43.0" text="Date:" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblErrorMsg" layoutX="23.0" layoutY="403.0" text="Error Message" textFill="#b50000" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="btnCancel" layoutX="146.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="30.0" prefWidth="70.0" text="Cancel" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConfirm" layoutX="39.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#confirmNewReservation" text="Confirm" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="260.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="10.0" layoutY="58.0" text="Doctor:" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="chbDoctor" layoutX="43.0" layoutY="85.0" prefHeight="25.0" prefWidth="174.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0" />
+      <ChoiceBox fx:id="chbTimeStart" layoutX="43.0" layoutY="209.0" prefHeight="25.0" prefWidth="174.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="180.0" />
+      <Label layoutX="18.0" layoutY="246.0" text="Time End:" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="chbTimeEnd" layoutX="43.0" layoutY="273.0" prefHeight="25.0" prefWidth="174.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="220.0" />
+      <Label layoutX="28.0" layoutY="112.0" prefHeight="27.0" prefWidth="43.0" text="Time Slot:" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="chbTimeSlot" layoutX="59.0" layoutY="143.0" prefHeight="25.0" prefWidth="174.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="140.0" />
+   </children>
+</AnchorPane>

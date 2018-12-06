@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="250.0" style="-fx-background-color: #7f8c8d; -fx-border-color: #000000; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doctortools.AddSlot">
+   <children>
+      <AnchorPane layoutY="22.0" style="-fx-background-color: #dcdcdc;" AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="47.0" layoutY="5.0" text="Add Time Slot" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="cmbStart" layoutX="108.0" layoutY="59.0" prefHeight="25.0" prefWidth="128.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="15.0" layoutY="58.0" text="Time Start:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbEnd" layoutX="108.0" layoutY="100.0" prefHeight="25.0" prefWidth="128.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="15.0" layoutY="99.0" text="Time End:" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepicker" layoutX="14.0" layoutY="162.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Label alignment="CENTER" layoutX="96.0" layoutY="135.0" text="Date:" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnConfirm" layoutX="20.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#confirmAdd" prefHeight="44.0" prefWidth="78.0" text="Confirm" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="235.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="162.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#cancel" text="Cancel" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="235.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblErrorMsg" layoutX="18.0" layoutY="251.0" text="Error Message" textFill="#b50000" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <CheckBox fx:id="ckbRecurring" layoutX="18.0" layoutY="201.0" mnemonicParsing="false" text="Is Weekly" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="195.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

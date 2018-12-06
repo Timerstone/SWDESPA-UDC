@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="527.0" minWidth="612.0" prefHeight="527.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewpanels.WeeklyAgendaView">
+   <children>
+      <AnchorPane style="-fx-background-color: #daa520;" AnchorPane.bottomAnchor="475.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblWeek" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="5.0" prefHeight="42.0" prefWidth="457.0" text="YYYY-MM-DD &lt;=&gt; YYY-MM-DD" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnPrev" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#prevWeek" text="Prev" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="550.0" AnchorPane.topAnchor="10.0" />
+            <Button fx:id="btnNext" layoutX="79.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#nextWeek" text="Next" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="list" layoutY="50.0" prefHeight="500.0" prefWidth="635.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+   </children>
+   <properties>
+        <!-- store controller at key "foo" in properties map -->
+        <foo><fx:reference source="controller" /></foo> 
+    </properties>
+</AnchorPane>
